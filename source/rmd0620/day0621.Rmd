@@ -6,7 +6,7 @@ output:
 date: '2022-06-21'
 ---
 ```{r setup, include=FALSE}
-knitr opts_chunk$set(echo = TRUE)
+ knitr::opts_chunk$set(echo= TRUE)
 ```
 
 # 데이터 불러오기 
@@ -115,4 +115,9 @@ round(prop.table(table(mpg1$trans)), 2)
 # 테이블 이미지
 # gt 패키지 활용 --> 고급 과정
 
+# Deployment
+deploy:
+  type: git
+  repo:https://github.com/limhanyong/limhanyong.github.io.git
+  branch: main
 
