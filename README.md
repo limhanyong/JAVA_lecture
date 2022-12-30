@@ -28,5 +28,5 @@
 
 ## 오픈 그래프(The Open Graph protocol)
 
-<img src="https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/slack_message_og_example.jpg" />
+<img src="https://github.com/limhanyong/seoul_Dulle-gil/blob/main/images/awards_slide10.jpg" />
 
