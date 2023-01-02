@@ -28,5 +28,5 @@
 
 ## 오픈 그래프(The Open Graph protocol)
 
-<img src="https://github.com/limhanyong/seoul_Dulle-gil/blob/main/images/awards_slide10.jpg" />
+<img src="https://github.com/limhanyong/seoul_Dulle-gil/blob/main/images" />
 
