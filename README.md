@@ -77,7 +77,7 @@
 ## Favicon(파비콘, favorites icon)
 
 ```` 
-웹페이지를 나타내는 아이콘, 웹페이지의 로고를 설정합니다.
+###### 웹페이지를 나타내는 아이콘, 웹페이지의 로고를 설정합니다.
 대부분의 경우 루트 경로에 favicon.ico 파일을 위치하면 자동으로 로딩하기 때문에 <link /> 를 작성할 필요가 없습니다.
 favicon.png 파일을 사용하려면 다음과 같이 <link />를 작성하세요.
 ````
@@ -144,9 +144,9 @@ body {
 
 ## GSAP & ScrollToPlugin
 
-GSAP(The GreenSock Animation Platform)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리입니다. ScrollToPlugin은 스크롤 애니메이션을 지원하는 GSAP 플러그인입니다.
+###### GSAP(The GreenSock Animation Platform)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리입니다. ScrollToPlugin은 스크롤 애니메이션을 지원하는 GSAP 플러그인입니다.
 
-자바스크립트 지식이 뛰어나지 않아도 충분히 사용할 수 있습니다!
+###### 자바스크립트 지식이 뛰어나지 않아도 충분히 사용할 수 있습니다!
 
 ````c
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
@@ -168,13 +168,13 @@ gsap.to(window, .7, {
 
 ## Swiper
 
-<a href="https://swiperjs.com/">Swiper</a> 는 하드웨어 가속 전환과 여러 기본 동작을 갖춘 현대적인 슬라이드 라이브러리입니다.
+###### <a href="https://swiperjs.com/">Swiper</a> 는 하드웨어 가속 전환과 여러 기본 동작을 갖춘 현대적인 슬라이드 라이브러리입니다.
 
-<a href="https://swiperjs.com/get-started">Getting Started With Swiper</a>
+###### <a href="https://swiperjs.com/get-started">Getting Started With Swiper</a>
 
-[2021.08.26 Updated]
-> 강의와 같이 Swiper 6버전을 사용합니다.
-7/8버전의 사용법이 다르기 때문에 6버전을 유지합니다.
+###### [2021.08.26 Updated]
+###### > 강의와 같이 Swiper 6버전을 사용합니다.
+###### 7/8버전의 사용법이 다르기 때문에 6버전을 유지합니다.
 
 ````c
 <!-- in HEAD -->
@@ -279,7 +279,7 @@ new ScrollMagic
 ````c
 'use strict';
 ````
-> 'Strict Mode'는 ECMAScript 5 버전에 있는 새로운 기능으로써, 프로그램 또는 함수를 엄격한 운용 콘텍스트 안에서 실행시킬 수 있게끔 합니다. 이 엄격한 콘텍스트는 몇가지 액션들을 실행할 수 없도록 하며, 좀 더 많은 예외를 발생시킵니다.
+###### > 'Strict Mode'는 ECMAScript 5 버전에 있는 새로운 기능으로써, 프로그램 또는 함수를 엄격한 운용 콘텍스트 안에서 실행시킬 수 있게끔 합니다. 이 엄격한 콘텍스트는 몇가지 액션들을 실행할 수 없도록 하며, 좀 더 많은 예외를 발생시킵니다.
 
 
 
