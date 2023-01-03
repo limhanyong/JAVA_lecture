@@ -251,6 +251,47 @@ function onYouTubePlayerAPIReady() {
 }
 ````
 
+## ScrollMagic
+
+###### <a href="https://github.com/janpaepke/ScrollMagic">ScrollMagic</a> 은 스크롤과 요소의 상호 작용을 위한 자바스크립트 라이브러리입니다.
+###### 대표적으로 어떤 요소가 현재 화면에 보이는 상태인지를 확인할 때 사용합니다.
+
+###### <a href="http://scrollmagic.io/docs/"> ScrollMagic API</a>
+````
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+````
+
+````c
+new ScrollMagic
+  .Scene({ // 감시할 장면(Scene)을 추가
+    triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+    triggerHook: .8 // 화면의 80% 지점에서 보여짐 여부 감시
+  })
+  .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+  .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
+  
+  ````
+  ## JS Strict Mode
+ ````
+ JavaScript를 '엄격 모드'로 사용합니다.
+파일 혹은 함수의 최상단에 작성해야 합니다.
+````
+````c
+'use strict';
+````
+> 'Strict Mode'는 ECMAScript 5 버전에 있는 새로운 기능으로써, 프로그램 또는 함수를 엄격한 운용 콘텍스트 안에서 실행시킬 수 있게끔 합니다. 이 엄격한 콘텍스트는 몇가지 액션들을 실행할 수 없도록 하며, 좀 더 많은 예외를 발생시킵니다.
+
+
+
+  
+  
+  
+  
+
+
+
+
+
 
 
 
