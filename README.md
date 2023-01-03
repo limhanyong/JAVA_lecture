@@ -47,3 +47,50 @@
 <meta property="og:url" content="https://github.com/limhanyong/seoul_Dulle-gil" />
 ````
 
++ ```` og:type ````: 페이지의 유형(E.g, website, video.movie)
++ ```` og:site_name ````: 속한 사이트의 이름
++ ```` og:title ````: 페이지의 이름(제목)
++ ```` og:description ````: 페이지의 간단한 설명
++ ```` og:image ````: 페이지의 대표 이미지 주소(URL)
++ ```` og:url ````: 페이지 주소(URL)
+
+## 트위터 카드(Twitter Cards)
+
+###### 웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
+###### <a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started">더 다양한 트위터 카드 보기</a>
+````c
+<meta property="twitter:card" content="website" />
+<meta property="twitter:site" content="Seoul Dulle-gil" />
+<meta property="twitter:title" content="Seoul Dulle-gil in Korea" />
+<meta property="twitter:description" content="서울시 내 다양하게 간단한 산책로 및 산보용으로 된 둘레길이 많이 있습니다." />
+<meta property="twitter:image" content="./images/favicon.png" />
+<meta property="twitter:url" content="https://github.com/limhanyong/seoul_Dulle-gil" />
+````
+
++ ```` twitter:card ````: 페이지(카드)의 유형(E.g. summary, player)
++ ```` twitter:site ````: 속한 사이트의 이름
++ ```` twitter:title ````: 페이지의 이름(제목)
++ ```` twitter:description ````: 페이지의 간단한 설명
++ ```` twitter:image ````: 페이지의 대표 이미지 주소(URL)
++ ```` twitter:url ````: 페이지 주소(URL)
+
+## Favicon(파비콘, favorites icon)
+
+```` 
+웹페이지를 나타내는 아이콘, 웹페이지의 로고를 설정합니다.
+대부분의 경우 루트 경로에 favicon.ico 파일을 위치하면 자동으로 로딩하기 때문에 <link /> 를 작성할 필요가 없습니다. favicon.png 파일을 사용하려면 다음과 같이 <link />를 작성하세요.
+````
+
+##### 파비콘 이미지는 루트 경로에 있어야 합니다!
+
+````c
+<!--<link rel="shortcut icon" href="favicon.ico" />-->
+<link rel="icon" href="./favicon.png" />
+````
++ ```` favicon.ico ````: 64 x 64 (px) 또는 32 x 32 또는 16 x 16
++ ```` favicon.png ````: 500 x 500 (px)
+
+ <img src="https://github.com/limhanyong/seoul_Dulle-gil/blob/main/images/favicon.ico" />
+  <img src="https://github.com/limhanyong/seoul_Dulle-gil/blob/main/images/favicon.png" />
+
+
