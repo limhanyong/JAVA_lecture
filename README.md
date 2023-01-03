@@ -152,6 +152,114 @@ GSAP(The GreenSock Animation Platform)은 자바스크립트로 제어하는 타
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
 ````
+###### <a href="https://greensock.com/docs/v3/GSAP/gsap.to()">.to() 사용법 </a>
+###### <a href="https://greensock.com/docs/v2/Easing">GSAP Easing</a>
+
+````c
+gsap.to(요소, 시간, 옵션)
+// 또는
+TweenMax.to(요소, 시간, 옵션)
+````
+````c
+gsap.to(window, .7, {
+  scrollTo: 0
+});
+````
+
+## Swiper
+
+<a href="https://swiperjs.com/">Swiper</a> 는 하드웨어 가속 전환과 여러 기본 동작을 갖춘 현대적인 슬라이드 라이브러리입니다.
+
+<a href="https://swiperjs.com/get-started">Getting Started With Swiper</a>
+
+[2021.08.26 Updated]
+> 강의와 같이 Swiper 6버전을 사용합니다.
+7/8버전의 사용법이 다르기 때문에 6버전을 유지합니다.
+
+````c
+<!-- in HEAD -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+<!-- in BODY -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">1</div>
+    <div class="swiper-slide">2</div>
+    <div class="swiper-slide">3</div>
+  </div>
+</div>
+
+````
+
+<a href="https://swiperjs.com/swiper-api">Swiper API(옵션)을 확인하세요!</a>
+
+````
+new Swiper(요소, 옵션);
+````
+````c
+new Swiper('.swiper-container', {
+  direction: 'vertical', // 수직 슬라이드
+  autoplay: true, // 자동 재생 여부
+  loop: true // 반복 재생 여부
+});
+
+````
+## Youtube API
+
+###### <a href="https://developers.google.com/youtube/iframe_api_reference?hl=ko">IFrame Player API</a> 를 통해 YouTube 동영상을 제어할 수 있습니다.
+
+###### 유튜브 영상이 출력될 위치에 요소를 지정(생성)합니다.
+
+````c
+<!-- in HEAD -->
+<script defer src="./js/youtube.js"></script>
+
+<!-- in BODY -->
+<div id="player"></div>
+
+````
+###### ```` onYouTubePlayerAPIReady ```` 함수 이름은 Youtube IFrame Player API에서 사용하는 이름이기 때문에 다르게 지정하면 동작하지 않습니다!
+###### 그리고 함수는 전역(Global) 등록해야 합니다!
+
+###### <a href="https://developers.google.com/youtube/player_parameters.html?playerVersion=HTML5&hl=ko#Parameters">플레이어 매개변수(playerVars)</a> 에서 더 많은 옵션을 확인할 수 있습니다.
+
+````c
+
+// Youtube IFrame API를 비동기로 로드합니다.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function onYouTubePlayerAPIReady() {
+  // <div id="player"></div>
+  new YT.Player('player', {
+    videoId: 'An6LvWQuj_8', // 재생할 유튜브 영상 ID
+    playerVars: {
+      autoplay: true, // 자동 재생 유무
+      loop: true, // 반복 재생 유무
+      playlist: 'An6LvWQuj_8' // 반복 재생할 유튜브 영상 ID 목록
+    },
+    events: {
+      // 영상이 준비되었을 때,
+      onReady: function (event) {
+        event.target.mute(); // 음소거!
+      }
+    }
+  });
+}
+````
+
+
+
+
+
+
+
+
+
+
 
 
 
