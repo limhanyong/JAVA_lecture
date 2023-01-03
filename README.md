@@ -30,19 +30,20 @@
 ---------------------------------
 ###### 웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
 ###### Slack -
-````c
-<img src="https://github.com/limhanyong/seoul_Dulle-gil/blob/main/images/20230103_10.jpg" />
-````
-###### Kakao Talk -
-````c
-<img src="https://github.com/limhanyong/seoul_Dulle-gil/blob/main/images/20230103_11.jpg" />
-````
-###### <a href="https://ogp.me/">오픈 그래프 속성 더 보기</a>
 
+###### <img src="https://github.com/limhanyong/seoul_Dulle-gil/blob/main/images/20230103_10.jpg" />
+
+###### Kakao Talk -
+
+###### <img src="https://github.com/limhanyong/seoul_Dulle-gil/blob/main/images/20230103_11.jpg" />
+
+###### <a href="https://ogp.me/">오픈 그래프 속성 더 보기</a>
+````c
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Seoul Dulle-gil" />
 <meta property="og:title" content="Seoul Dulle-gil in Korea" />
 <meta property="og:description" content="서울시 내 다양하게 간단한 산책로 및 산보용으로 된 둘레길이 많이 있습니다." />
 <meta property="og:image" content="./images/favicon.png" />
 <meta property="og:url" content="https://github.com/limhanyong/seoul_Dulle-gil" />
+````
 
